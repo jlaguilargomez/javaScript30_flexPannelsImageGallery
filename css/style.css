@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+    color:white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 300px;
+}
+
+.panels{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 
+        flex 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.panels__panel{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    flex-grow: 1;
+    box-shadow: inset 0 0 5px 5px rgba(244, 233,211, 0.5);
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.panels__text{
+    display:flex;
+    max-width:100%;
+    align-items:center;
+    flex:1; 
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.panel1{
+    background-image: url("../sources/img/party1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel2{
+    background-image: url("../sources/img/party2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel3{
+    background-image: url("../sources/img/party3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel4{
+    background-image: url("../sources/img/party4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel5{
+    background-image: url("../sources/img/party5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outsideUp{
+    transform: translateY(-100%);
+}
+
+.outsideDown{
+    transform: translateY(100%);
+}
+
+.flexFive{
+    flex-grow: 5;
+}
+
+.bigText{
+    font-size: 2.5em;
+}
